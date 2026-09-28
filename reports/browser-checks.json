@@ -1,0 +1,22 @@
+{
+  "browser": "Chrome headless, real pointer/keyboard interactions",
+  "checks": [
+    "click purchase and placement",
+    "occupied drop rejected without debit",
+    "R rotates selected shop item",
+    "confirmed upgrade retains first position",
+    "sale and undo restore upgraded item",
+    "pointer drag moves an owned item",
+    "file URL save survives reload",
+    "frozen stock survives reroll",
+    "space, 4x, skip, reward, next round",
+    "codex search",
+    "settings and colorblind mode",
+    "1280x720 has visible battle CTA and no horizontal overflow",
+    "390px responsive layout",
+    "third-page expansion",
+    "round 18 final summary",
+    "no browser runtime exceptions"
+  ],
+  "errors": []
+}

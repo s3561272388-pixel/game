@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "path": "assets/terminal/changli.png",
+    "name": "长离 · 丹煌离火",
+    "author": "555me / Wuthering-Waves-GameAssets（库洛原作美术）",
+    "source": "https://github.com/555me/Wuthering-Waves-GameAssets",
+    "url": "https://raw.githubusercontent.com/555me/Wuthering-Waves-GameAssets/main/UI/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_changli_UI.png",
+    "use": "启动页独立立绘；非表情包",
+    "license": "原作权利归库洛游戏，仅用于私有非商业同人试用。"
+  }
+}

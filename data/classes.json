@@ -1,0 +1,66 @@
+{
+  "$schema": "classes-v1",
+  "version": "1.0.0",
+  "classes": [
+    {
+      "id": "warrior",
+      "name": "战士",
+      "desc": "高生命、低耐力。残血时越战越勇。",
+      "base": { "maxHp": 120, "maxStamina": 8, "staminaRegen": 0.15, "atkPct": 0, "speedPct": 0, "critChance": 0, "critMult": 1.5, "lifesteal": 0, "thorns": 0, "regenPerTick": 0, "healPct": 0, "atkFlat": 0 },
+      "traits": [
+        {
+          "id": "rage",
+          "name": "狂暴",
+          "desc": "战斗中每损失 20% 最大生命，获得 +5% 攻击（最多 +20%）。",
+          "impl": { "type": "dynamicAtkPctPerHpLostPct", "perPct": 5, "cap": 20 }
+        }
+      ],
+      "startItems": ["wpn_rusty_sword", "arm_wood_shield"]
+    },
+    {
+      "id": "ranger",
+      "name": "游侠",
+      "desc": "高攻速、高耐力回复，靠连击与吸血滚雪球。",
+      "base": { "maxHp": 95, "maxStamina": 10, "staminaRegen": 0.25, "atkPct": 0, "speedPct": 0, "critChance": 5, "critMult": 1.5, "lifesteal": 0, "thorns": 0, "regenPerTick": 0, "healPct": 0, "atkFlat": 0 },
+      "traits": [
+        {
+          "id": "first_strike",
+          "name": "先手",
+          "desc": "战斗开始时获得 +15% 攻速。",
+          "impl": { "type": "onBattleStartBuff", "stat": "speedPct", "value": 15 }
+        }
+      ],
+      "startItems": ["wpn_hunting_bow", "wpn_dagger"]
+    },
+    {
+      "id": "mage",
+      "name": "法师",
+      "desc": "脆皮但爆发极高，靠暴击与宝石增伤。",
+      "base": { "maxHp": 85, "maxStamina": 12, "staminaRegen": 0.2, "atkPct": 0, "speedPct": 0, "critChance": 15, "critMult": 2.0, "lifesteal": 0, "thorns": 0, "regenPerTick": 0, "healPct": 0, "atkFlat": 0 },
+      "traits": [
+        {
+          "id": "arcane",
+          "name": "秘能",
+          "desc": "基础暴击率 +15%，暴击倍率为 2.0 倍。",
+          "impl": { "type": "passive", "appliedIn": "base" }
+        }
+      ],
+      "startItems": ["wpn_spark_staff", "trk_mana_gem"]
+    },
+    {
+      "id": "cleric",
+      "name": "牧师",
+      "desc": "治疗与护甲兼备，靠续航赢下长局。",
+      "base": { "maxHp": 110, "maxStamina": 9, "staminaRegen": 0.2, "atkPct": 0, "speedPct": 0, "critChance": 0, "critMult": 1.5, "lifesteal": 0, "thorns": 0, "regenPerTick": 0.2, "healPct": 25, "atkFlat": 0 },
+      "traits": [
+        {
+          "id": "blessing",
+          "name": "祝福",
+          "desc": "治疗量 +25%，战斗开始时回复 5% 最大生命。",
+          "impl": { "type": "onBattleStartHealPct", "value": 5 }
+        }
+      ],
+      "startItems": ["wpn_war_hammer", "trk_holy_symbol"]
+    }
+  ]
+}

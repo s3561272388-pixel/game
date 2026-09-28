@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "out-of-bounds 2x2 preview leaves all 30 cells unchanged",
+    "cancelled drag clears ghost and does not debit",
+    "corrupt save safely starts a valid run",
+    "unmodified campaign reaches its ending through normal purchases, merges and round controls",
+    "battle skip remains visible at 1280x720 across campaign"
+  ],
+  "errors": [],
+  "campaign": {
+    "seed": 9124,
+    "rounds": 18,
+    "purchases": 38,
+    "wins": 16,
+    "hearts": 3,
+    "result": "END"
+  }
+}

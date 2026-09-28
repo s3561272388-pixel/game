@@ -1,0 +1,394 @@
+{
+  "character_warrior": {
+    "path": "assets/characters/character_warrior.webp",
+    "name": "长离",
+    "source": "https://emoji.wuwa.games/archives/changli-pack1-png",
+    "url": "https://media.wuwa.games/emoji-packs--changli-pack1-png--webp--r-70ac737d372888fa2ebf--008af47cf4e9fdcae23dc9eb8148218d0463ee392a61ef2274862de877fac266.webp",
+    "author": "九个西瓜",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_warrior_alt": {
+    "path": "assets/characters/character_warrior_alt.webp",
+    "name": "长离",
+    "source": "https://emoji.wuwa.games/archives/changli-pack1-png",
+    "url": "https://media.wuwa.games/emoji-packs--changli-pack1-png--webp--r-9875c51f4448de22f6c3--022df535e72168bd41d4ab51138f65c7e4a6ddfb595c42d64f1dc6262301814d.webp",
+    "author": "九个西瓜",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_ranger": {
+    "path": "assets/characters/character_ranger.webp",
+    "name": "炽霞",
+    "source": "https://emoji.wuwa.games/archives/chixia-loading-error",
+    "url": "https://media.wuwa.games/emoji-packs--chixia-loading-error--webp--r-1ee6a8855543764311fb--2cec6a5623c6757bd4478aa3df5b5277f42125450cfa7054c54bbee47473b301.webp",
+    "author": "雾雪",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_ranger_alt": {
+    "path": "assets/characters/character_ranger_alt.webp",
+    "name": "炽霞",
+    "source": "https://emoji.wuwa.games/archives/chixia-loading-error",
+    "url": "https://media.wuwa.games/emoji-packs--chixia-loading-error--webp--r-034bbccf3666d8f3f8a0--9973f20539dd8d6939597f93d39d94d704b756e0fae81ab43ca165f577bd93d4.webp",
+    "author": "雾雪",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_mage": {
+    "path": "assets/characters/character_mage_alt.webp",
+    "name": "安可",
+    "source": "https://emoji.wuwa.games/archives/anke-wuxue-phase-1",
+    "url": "https://media.wuwa.games/emoji-packs--anke-wuxue-phase-1--webp--r-a0ac50c2d62f33daf1f8--95bec60cc1c470ede36c13d6620457e78b9947c74223a43971751f080ed3f2fd.webp",
+    "author": "雾雪",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_mage_alt": {
+    "path": "assets/characters/character_mage.webp",
+    "name": "安可",
+    "source": "https://emoji.wuwa.games/archives/anke-wuxue-phase-1",
+    "url": "https://media.wuwa.games/emoji-packs--anke-wuxue-phase-1--webp--r-ed6c130b444a667f8e85--9189925c770654d516ed8d86a52f0800c064c61dc2db9c9b79e5fe785f35e742.webp",
+    "author": "雾雪",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_cleric": {
+    "path": "assets/characters/character_cleric.webp",
+    "name": "维里奈",
+    "source": "https://emoji.wuwa.games/archives/weilina-banya-phase-4",
+    "url": "https://media.wuwa.games/emoji-packs--weilina-banya-phase-4--webp--r-9388a1b3c9b852b40abb--5ef4cc1ee675d487544073bd447dad36b1369b0103c1375cde9fd067fa58822c.webp",
+    "author": "猫屋敷梨梨&春也Haruya",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "character_cleric_alt": {
+    "path": "assets/characters/character_cleric_alt.webp",
+    "name": "维里奈",
+    "source": "https://emoji.wuwa.games/archives/weilina-banya-phase-4",
+    "url": "https://media.wuwa.games/emoji-packs--weilina-banya-phase-4--webp--r-25d4dbc37218bb8f58e2--843ed3fdf6a2c217a22bbb52ccb5dbeb96602114cf74b4e69ed0862025501cf2.webp",
+    "author": "猫屋敷梨梨&春也Haruya",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page"
+  },
+  "wpn_rusty_sword": {
+    "path": "assets/items/wpn_rusty_sword.png",
+    "name": "原初迅刀·鸣雨",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/TyroSword.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_wood_shield": {
+    "path": "assets/items/arm_wood_shield.webp",
+    "name": "鸣钟幼龟",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/Hoartoise.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_dagger": {
+    "path": "assets/items/wpn_dagger.png",
+    "name": "暗夜迅刀·黑闪",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/SwordOfNight.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_hunting_bow": {
+    "path": "assets/items/wpn_hunting_bow.png",
+    "name": "原初佩枪·穿林",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/TyroPistols.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_spark_staff": {
+    "path": "assets/items/wpn_spark_staff.png",
+    "name": "原初音感仪·听浪",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/TyroRectifier.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_mana_gem": {
+    "path": "assets/items/trk_mana_gem.webp",
+    "name": "冷凝棱镜",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/GlacioPrism.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_war_hammer": {
+    "path": "assets/items/wpn_war_hammer.png",
+    "name": "原初臂铠·磐岩",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/TyroGauntlets.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_holy_symbol": {
+    "path": "assets/items/trk_holy_symbol.webp",
+    "name": "游弋蝶",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/Cruisewing.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "food_bread": {
+    "path": "assets/items/food_bread.webp",
+    "name": "咕咕河豚",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/Gulpuff.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_leather_vest": {
+    "path": "assets/items/arm_leather_vest.webp",
+    "name": "坚岩斗士",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/ChasmGuardian.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "food_water_flask": {
+    "path": "assets/items/food_water_flask.webp",
+    "name": "碎獠猪",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/SabyrBoar.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_wooden_club": {
+    "path": "assets/items/wpn_wooden_club.png",
+    "name": "原初长刃·朴石",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/TyroBroadblade.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_lucky_charm": {
+    "path": "assets/items/trk_lucky_charm.webp",
+    "name": "惊蛰猎手",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/ElectroPredator.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_steel_sword": {
+    "path": "assets/items/wpn_steel_sword.png",
+    "name": "不归孤军",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/CommandoOfConviction.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_spiked_shield": {
+    "path": "assets/items/arm_spiked_shield.webp",
+    "name": "磐石守卫",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/RocksteadyGuardian.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_twin_daggers": {
+    "path": "assets/items/wpn_twin_daggers.png",
+    "name": "行进序曲",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/Overture.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_short_bow": {
+    "path": "assets/items/wpn_short_bow.png",
+    "name": "暗夜佩枪·暗星",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/PistolsOfNight.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_ice_lance": {
+    "path": "assets/items/wpn_ice_lance.png",
+    "name": "今州守望",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/JinzhouKeeper.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_ruby": {
+    "path": "assets/items/trk_ruby.webp",
+    "name": "热熔棱镜",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/FusionPrism.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_mace": {
+    "path": "assets/items/wpn_mace.png",
+    "name": "袍泽之固",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/AmityAccord.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_chain_mail": {
+    "path": "assets/items/arm_chain_mail.webp",
+    "name": "机械磐护",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/AutopuppetScout.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_swift_boots": {
+    "path": "assets/items/trk_swift_boots.webp",
+    "name": "青羽鹭",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/CyanFeatheredHeron.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "food_cheese": {
+    "path": "assets/items/food_cheese.webp",
+    "name": "叮咚咚",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/ClangBang.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_great_axe": {
+    "path": "assets/items/wpn_great_axe.png",
+    "name": "纹秋",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/Autumntrace.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_thorn_mail": {
+    "path": "assets/items/arm_thorn_mail.webp",
+    "name": "刺玫菇",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/Roseshroom.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_poison_dagger": {
+    "path": "assets/items/wpn_poison_dagger.png",
+    "name": "飞景",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/Lumingloss.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_long_bow": {
+    "path": "assets/items/wpn_long_bow.png",
+    "name": "不眠烈火",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/UndyingFlame.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_arcane_orb": {
+    "path": "assets/items/wpn_arcane_orb.png",
+    "name": "漪澜浮录",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/CosmicRipples.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_healing_herb": {
+    "path": "assets/items/trk_healing_herb.webp",
+    "name": "通行灯偶",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/TrafficIlluminator.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_blessed_armor": {
+    "path": "assets/items/arm_blessed_armor.webp",
+    "name": "鸣钟之龟",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/BellBorneGeochelone.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_scimitar": {
+    "path": "assets/items/wpn_scimitar.png",
+    "name": "千古洑流",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/EmeraldOfGenesis.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_flame_blade": {
+    "path": "assets/items/wpn_flame_blade.png",
+    "name": "赫奕流明",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/BlazingBrilliance.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_assassin_blade": {
+    "path": "assets/items/wpn_assassin_blade.png",
+    "name": "裁春",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/RedSpring.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_storm_staff": {
+    "path": "assets/items/wpn_storm_staff.png",
+    "name": "掣傀之手",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/Stringmaster.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "arm_guardian_plate": {
+    "path": "assets/items/arm_guardian_plate.webp",
+    "name": "无归的谬误",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/FallacyOfNoReturn.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_phoenix_feather": {
+    "path": "assets/items/trk_phoenix_feather.webp",
+    "name": "燎照之骑",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/InfernoRider.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_doom_hammer": {
+    "path": "assets/items/wpn_doom_hammer.png",
+    "name": "擎渊怒涛",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/AbyssSurges.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "wpn_world_tree_bow": {
+    "path": "assets/items/wpn_world_tree_bow.png",
+    "name": "停驻之烟",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/StaticMist.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_archmage_crown": {
+    "path": "assets/items/trk_archmage_crown.webp",
+    "name": "无妄者",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/echoes/Dreamless.webp",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  },
+  "trk_holy_grail": {
+    "path": "assets/items/trk_holy_grail.png",
+    "name": "星序协响",
+    "source": "https://github.com/ryanbenson/wuthering-waves-assets",
+    "url": "https://raw.githubusercontent.com/ryanbenson/wuthering-waves-assets/master/images/weapons/StellarSymphony.png",
+    "author": "Kuro Games / 库洛游戏",
+    "license": "鸣潮游戏美术，原版权归库洛；未确认商业/再分发授权"
+  }
+}

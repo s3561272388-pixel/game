@@ -1,0 +1,1 @@
+{"name":"engine","version":"1.0.0","type":"module","scripts":{"sim:dump":"node cli.mjs"}}

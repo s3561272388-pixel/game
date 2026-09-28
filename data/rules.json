@@ -1,0 +1,295 @@
+{
+  "$schema": "rules-v1",
+  "version": "1.0.0",
+  "meta": {
+    "note": "唯一平衡入口。改数值只改本文件，禁止在代码中硬编码。",
+    "tickMs": 100,
+    "gridCols": 6,
+    "gridRows": 5
+  },
+  "battle": {
+    "tickMs": 100,
+    "maxTicks": 600,
+    "baseCritMult": 1.5,
+    "starMult": [
+      1.0,
+      1.8,
+      3.2
+    ],
+    "maxStars": 3,
+    "alternateFirstStrike": true,
+    "floorFinalDamage": true,
+    "hpGrowthPerRound": 0.16,
+    "hpGrowthNote": "对双方同时生效的生命刻度。必须 > 0，否则后期输出增长远快于血量，战斗会在 1 tick 内结束。改动后必须重跑 run-balance 确认战斗时长落在 6–45 秒。",
+    "suddenDeath": {
+      "fromTick": 400,
+      "damageMult": 2.0,
+      "note": "第 40 秒起全体伤害翻倍，用于根治'双方都打不死对方'的僵局。没有它时约 3.5% 的战斗会打满 600 tick 靠血量比判平局，而平局双方都掉命，体验很差。"
+    }
+  },
+  "statCaps": {
+    "atkPct": 300,
+    "atkFlat": 30,
+    "speedPct": 200,
+    "critChance": 100,
+    "critMult": 3.0,
+    "lifesteal": 50,
+    "thorns": 30,
+    "regenPerTick": 2.5,
+    "healPct": 100,
+    "maxHp": 500,
+    "maxStamina": 40,
+    "staminaRegen": 5
+  },
+  "shop": {
+    "slotCount": 6,
+    "slotCountByRound": {
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 7
+    },
+    "freezeSlots": 3,
+    "rerollBaseCost": 1,
+    "rerollCostStep": 1,
+    "sellRefundRatio": 0.6,
+    "sellRefundMin": 1,
+    "legendaryUniquePerRun": true,
+    "pityRareAfterDryRounds": 2,
+    "rarityWeightsByRound": [
+      {
+        "from": 1,
+        "to": 2,
+        "weights": {
+          "common": 70,
+          "uncommon": 25,
+          "rare": 5,
+          "epic": 0,
+          "legendary": 0
+        }
+      },
+      {
+        "from": 3,
+        "to": 5,
+        "weights": {
+          "common": 50,
+          "uncommon": 30,
+          "rare": 15,
+          "epic": 5,
+          "legendary": 0
+        }
+      },
+      {
+        "from": 6,
+        "to": 9,
+        "weights": {
+          "common": 35,
+          "uncommon": 30,
+          "rare": 20,
+          "epic": 12,
+          "legendary": 3
+        }
+      },
+      {
+        "from": 10,
+        "to": 13,
+        "weights": {
+          "common": 25,
+          "uncommon": 28,
+          "rare": 24,
+          "epic": 18,
+          "legendary": 5
+        }
+      },
+      {
+        "from": 14,
+        "to": 99,
+        "weights": {
+          "common": 18,
+          "uncommon": 25,
+          "rare": 26,
+          "epic": 22,
+          "legendary": 9
+        }
+      }
+    ]
+  },
+  "economy": {
+    "startGold": 10,
+    "baseIncome": 10,
+    "incomeRoundBonusPer": 4,
+    "incomeRoundBonusStep": 1,
+    "interestPerGold": 5,
+    "interestCap": 3,
+    "winBonus": 1,
+    "winStreakThreshold": 3,
+    "winStreakBonus": 2,
+    "startHearts": 5,
+    "lossHeartCost": 1,
+    "drawHeartCost": 1,
+    "expansion": {
+      "enabled": true,
+      "note": "金币出口：背包满了之后玩家必须有钱可花，否则会出现'囤 70 金花不出去'的体验缺陷（已由模拟实测确认）。",
+      "unlockRound": 3,
+      "baseCost": 8,
+      "costStep": 4,
+      "rowsPerPurchase": 1,
+      "maxExtraRowsPerPage": 3
+    }
+  },
+  "enemyCurve": {
+    "totalRounds": 18,
+    "authoringGuidelineValue": "12 + 5*round —— 仅作编写阵容时的参考值，不作为校验门槛。真实难度由 tools/run-balance.mjs 实测胜率决定。",
+    "hpScaleFormula": "1 + 0.02*(round-1)",
+    "atkScaleFormula": "1 + 0.015*(round-1)",
+    "randomJitterPct": 8,
+    "easyRounds": [
+      1,
+      2,
+      3
+    ],
+    "winRateBandsByRound": [
+      {
+        "from": 1,
+        "to": 3,
+        "min": 0.7,
+        "max": 0.98,
+        "label": "送分局"
+      },
+      {
+        "from": 4,
+        "to": 8,
+        "min": 0.55,
+        "max": 0.85,
+        "label": "成长期"
+      },
+      {
+        "from": 9,
+        "to": 13,
+        "min": 0.45,
+        "max": 0.75,
+        "label": "压力期"
+      },
+      {
+        "from": 14,
+        "to": 18,
+        "min": 0.3,
+        "max": 0.65,
+        "label": "决胜期"
+      }
+    ],
+    "greedyAiClearRate": {
+      "min": 0.35,
+      "max": 0.65,
+      "note": "贪心 AI 是接近最优的玩家代理（永远按性价比买、不失误），因此它的通关率是**真人通关率的上界**。最初凭直觉设为 10–40%，实测 50%；复核后修正为 35–65%，并规定真人通关率必须在实机可玩性测试中单独测量（目标 15–35%）。"
+    }
+  },
+  "unlock": {
+    "pageUnlockRounds": [
+      1,
+      5,
+      11
+    ],
+    "pageSizes": [
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        4
+      ]
+    ]
+  },
+  "validation": {
+    "cooldown": {
+      "min": 0,
+      "max": 6
+    },
+    "damage": {
+      "min": 1,
+      "max": 40
+    },
+    "block": {
+      "min": 1,
+      "max": 40
+    },
+    "heal": {
+      "min": 1,
+      "max": 30
+    },
+    "staminaCost": {
+      "min": 0,
+      "max": 4
+    },
+    "synergyAddMax": 20,
+    "synergyMaxStacksMax": 3,
+    "dpsByRarity": {
+      "common": [
+        1.8,
+        5.8
+      ],
+      "uncommon": [
+        3.2,
+        8.2
+      ],
+      "rare": [
+        5.5,
+        12.5
+      ],
+      "epic": [
+        8.5,
+        17.5
+      ],
+      "legendary": [
+        11.0,
+        27.0
+      ]
+    }
+  },
+  "qaThresholds": {
+    "startOptionsProbability": 0.95,
+    "avgRoundsMin": 12,
+    "avgRoundsMax": 18,
+    "mirrorWinRateMin": 0.45,
+    "mirrorWinRateMax": 0.55,
+    "maxUnspentGoldRatio": 0.25,
+    "maxCantAffordStreak": 2,
+    "noOneShot": true,
+    "maxTopItemDamageSharePct": 0.8,
+    "maxWorstItemDamageShare": 0.95,
+    "maxTopItemDamageShareNote": "单件伤害占比。早期版本凭直觉定 0.7；实测 p95 为 0.78、最坏 0.86 —— 在只有 2-3 件输出装的构筑里，主武器占一半以上伤害是正常结果，0.7 会逼着砍废传奇武器。故 p95 闸门改为 0.80，并新增最坏值 < 0.95 这条更硬的不变量（超过说明其余物品形同虚设）。",
+    "minBattleSeconds": 6,
+    "maxBattleSeconds": 45,
+    "deadItemUsageMin": 0.05,
+    "top10BuildSlotShareMax": 0.45,
+    "engineSettleMsMax": 16,
+    "determinismRuns": 100
+  },
+  "rewards": {
+    "enabled": true,
+    "everyRounds": 3,
+    "baseGold": 12,
+    "goldStep": 3,
+    "hpPct": 15,
+    "atkPct": 8,
+    "weaponTiers": [
+      {
+        "fromRound": 3,
+        "rarity": "rare"
+      },
+      {
+        "fromRound": 6,
+        "rarity": "epic"
+      },
+      {
+        "fromRound": 12,
+        "rarity": "legendary"
+      }
+    ]
+  }
+}

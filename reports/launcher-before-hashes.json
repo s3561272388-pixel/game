@@ -1,0 +1,10 @@
+{
+  "packages/engine/game.mjs": "a818b0b228e1c6b5e7cb5bc601961bc97e034528c255428b243857dfd0517685",
+  "packages/engine/battle.mjs": "f53c4db79c3190a421328e7e4c094dcd9dc6f056f73fe2bb57a47efc724b79fe",
+  "data/rules.json": "3e0172dafed9886635b403f5c8cef9b9be57be2108883af0fbc54cf5b93312b7",
+  "data/items.json": "6269fdcefc31b07675d11aafe56b1c551fc6a9e564da5931eac55e40dbb723f3",
+  "data/classes.json": "8de557ecabfc4dd2dd316dd58b854da997a812996039dd3169fa04e2b25f3375",
+  "data/enemies.json": "c6f57b1b30ddf30f637a9f3aed29b12ed0b2f65117af672505856aa988766ccc",
+  "apps/web/main.jsx": "adcc595833fb4ba6408998c36f3d58d08b47837318c21815b4b02ef6f68bd790",
+  "apps/web/style.css": "49bf502c5bc7949121fae150d197c8a2dbf4b7600c54dca8535c569b162174a7"
+}

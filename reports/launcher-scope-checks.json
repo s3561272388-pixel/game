@@ -1,0 +1,28 @@
+{
+  "unchanged": {
+    "packages/engine/game.mjs": true,
+    "packages/engine/battle.mjs": true,
+    "data/rules.json": true,
+    "data/items.json": true,
+    "data/classes.json": true,
+    "data/enemies.json": true,
+    "apps/web/style.css": true
+  },
+  "originalThemeColorsUnchanged": true,
+  "terminalHardcodedColorMatches": [],
+  "emojiBytes": {
+    "boot.webp": 115734,
+    "curious.webp": 6780,
+    "excited.webp": 4942,
+    "farewell.webp": 96058,
+    "idle.webp": 40946
+  },
+  "emojiTotalBytes": 264460,
+  "gameBridgeOnly": [
+    "export App for launcher",
+    "read save at component mount",
+    "select new/resume entry",
+    "save timestamp in separate key",
+    "return-to-terminal navigation"
+  ]
+}

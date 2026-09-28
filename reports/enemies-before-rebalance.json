@@ -1,0 +1,220 @@
+{
+  "$schema": "enemies-v1",
+  "version": "1.0.0",
+  "generated": {
+    "by": "tools/gen-enemies.mjs",
+    "seed": 20260202,
+    "note": "本文件由生成器产出，请勿手改布局。改难度请用 tools/calibrate.mjs 调整 hpScale/atkScale；改阵容请改生成器里的目标价值曲线与物品池规则。"
+  },
+  "meta": {
+    "grid": [6, 5],
+    "note": "page 为背包页下标(0/1/2)，对应 rules.unlock.pageSizes；布局合法性由 tools/validate-data.mjs 校验。"
+  },
+  "enemies": [
+    { "round": 1, "name": "新手村民", "cls": "warrior", "hpScale": 1.000, "atkScale": 1.217, "items": [
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 }
+    ] },
+    { "round": 2, "name": "游荡猎人", "cls": "ranger", "hpScale": 1.440, "atkScale": 2.013, "items": [
+      { "defId": "wpn_hunting_bow", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "food_bread", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "food_bread", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "trk_lucky_charm", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 }
+    ] },
+    { "round": 3, "name": "见习法师", "cls": "mage", "hpScale": 1.200, "atkScale": 1.753, "items": [
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "trk_lucky_charm", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "arm_leather_vest", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "trk_lucky_charm", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 4, "row": 1, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 1, "row": 1, "rot": 0 },
+      { "defId": "food_bread", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "trk_lucky_charm", "stars": 1, "page": 0, "col": 2, "row": 2, "rot": 0 }
+    ] },
+    { "round": 4, "name": "苦修士", "cls": "cleric", "hpScale": 1.000, "atkScale": 2.617, "items": [
+      { "defId": "wpn_war_hammer", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "trk_holy_symbol", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 0, "row": 2, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 2, "row": 2, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 3, "row": 1, "rot": 0 }
+    ] },
+    { "round": 5, "name": "佣兵队长", "cls": "warrior", "hpScale": 1.400, "atkScale": 0.934, "items": [
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_steel_sword", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "arm_thorn_mail", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "food_cheese", "stars": 1, "page": 0, "col": 0, "row": 2, "rot": 0 },
+      { "defId": "food_cheese", "stars": 1, "page": 0, "col": 2, "row": 2, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 0, "row": 3, "rot": 0 },
+      { "defId": "food_bread", "stars": 1, "page": 0, "col": 2, "row": 3, "rot": 0 }
+    ] },
+    { "round": 6, "name": "双刃刺客", "cls": "ranger", "hpScale": 2.489, "atkScale": 1.145, "items": [
+      { "defId": "wpn_hunting_bow", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_short_bow", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "arm_leather_vest", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_world_tree_bow", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 2, "row": 1, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 3, "row": 2, "rot": 0 }
+    ] },
+    { "round": 7, "name": "寒冰术士", "cls": "mage", "hpScale": 1.728, "atkScale": 1.714, "items": [
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "trk_ruby", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_arcane_orb", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "trk_archmage_crown", "stars": 1, "page": 0, "col": 1, "row": 1, "rot": 0 }
+    ] },
+    { "round": 8, "name": "光辉祭司", "cls": "cleric", "hpScale": 1.000, "atkScale": 3.000, "items": [
+      { "defId": "wpn_war_hammer", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "trk_holy_grail", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "arm_guardian_plate", "stars": 1, "page": 0, "col": 0, "row": 2, "rot": 0 },
+      { "defId": "wpn_mace", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "wpn_mace", "stars": 1, "page": 0, "col": 3, "row": 2, "rot": 0 }
+    ] },
+    { "round": 9, "name": "斧王", "cls": "warrior", "hpScale": 1.296, "atkScale": 1.266, "items": [
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "arm_leather_vest", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "arm_leather_vest", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 0, "row": 2, "rot": 0 },
+      { "defId": "arm_thorn_mail", "stars": 1, "page": 0, "col": 1, "row": 2, "rot": 0 },
+      { "defId": "wpn_steel_sword", "stars": 1, "page": 0, "col": 4, "row": 2, "rot": 0 },
+      { "defId": "wpn_steel_sword", "stars": 1, "page": 0, "col": 5, "row": 2, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 0, "row": 3, "rot": 0 },
+      { "defId": "food_bread", "stars": 1, "page": 0, "col": 0, "row": 4, "rot": 0 },
+      { "defId": "arm_leather_vest", "stars": 1, "page": 1, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 1, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_great_axe", "stars": 1, "page": 1, "col": 4, "row": 0, "rot": 0 }
+    ] },
+    { "round": 10, "name": "毒刃游侠", "cls": "ranger", "hpScale": 2.489, "atkScale": 1.930, "items": [
+      { "defId": "wpn_hunting_bow", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_assassin_blade", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "trk_swift_boots", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "trk_swift_boots", "stars": 1, "page": 0, "col": 4, "row": 1, "rot": 0 },
+      { "defId": "wpn_assassin_blade", "stars": 1, "page": 0, "col": 1, "row": 2, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 2, "row": 2, "rot": 0 },
+      { "defId": "wpn_short_bow", "stars": 1, "page": 0, "col": 3, "row": 2, "rot": 0 },
+      { "defId": "wpn_short_bow", "stars": 1, "page": 0, "col": 4, "row": 2, "rot": 0 }
+    ] },
+    { "round": 11, "name": "秘能导士", "cls": "mage", "hpScale": 1.000, "atkScale": 3.000, "items": [
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_ice_lance", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "trk_ruby", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "trk_mana_gem", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "arm_guardian_plate", "stars": 1, "page": 0, "col": 2, "row": 1, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 5, "row": 2, "rot": 0 },
+      { "defId": "wpn_ice_lance", "stars": 1, "page": 0, "col": 0, "row": 4, "rot": 90 },
+      { "defId": "arm_guardian_plate", "stars": 1, "page": 1, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_ice_lance", "stars": 1, "page": 1, "col": 3, "row": 0, "rot": 0 }
+    ] },
+    { "round": 12, "name": "圣殿守卫", "cls": "cleric", "hpScale": 1.322, "atkScale": 3.000, "items": [
+      { "defId": "wpn_war_hammer", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 2, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "food_bread", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_mace", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "trk_healing_herb", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "wpn_war_hammer", "stars": 1, "page": 0, "col": 1, "row": 1, "rot": 0 },
+      { "defId": "food_cheese", "stars": 2, "page": 0, "col": 2, "row": 1, "rot": 0 },
+      { "defId": "wpn_mace", "stars": 2, "page": 0, "col": 5, "row": 1, "rot": 0 }
+    ] },
+    { "round": 13, "name": "烈焰剑士", "cls": "warrior", "hpScale": 2.240, "atkScale": 1.352, "items": [
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_flame_blade", "stars": 2, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "arm_thorn_mail", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_great_axe", "stars": 1, "page": 0, "col": 0, "row": 3, "rot": 90 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 3, "row": 3, "rot": 0 },
+      { "defId": "wpn_flame_blade", "stars": 1, "page": 0, "col": 5, "row": 1, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 1, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_flame_blade", "stars": 1, "page": 1, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 1, "col": 2, "row": 0, "rot": 0 }
+    ] },
+    { "round": 14, "name": "影袭者", "cls": "ranger", "hpScale": 1.587, "atkScale": 3.000, "items": [
+      { "defId": "wpn_hunting_bow", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_poison_dagger", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "arm_chain_mail", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "wpn_poison_dagger", "stars": 1, "page": 0, "col": 1, "row": 1, "rot": 0 },
+      { "defId": "wpn_twin_daggers", "stars": 1, "page": 0, "col": 2, "row": 2, "rot": 0 },
+      { "defId": "wpn_long_bow", "stars": 2, "page": 0, "col": 0, "row": 4, "rot": 90 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 4, "row": 2, "rot": 0 },
+      { "defId": "wpn_world_tree_bow", "stars": 1, "page": 1, "col": 0, "row": 0, "rot": 0 }
+    ] },
+    { "round": 15, "name": "风暴贤者", "cls": "mage", "hpScale": 2.489, "atkScale": 1.029, "items": [
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "trk_ruby", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_arcane_orb", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 1, "row": 1, "rot": 0 },
+      { "defId": "trk_ruby", "stars": 1, "page": 0, "col": 2, "row": 1, "rot": 0 },
+      { "defId": "trk_archmage_crown", "stars": 1, "page": 0, "col": 1, "row": 2, "rot": 0 },
+      { "defId": "wpn_storm_staff", "stars": 1, "page": 0, "col": 3, "row": 2, "rot": 0 },
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 5, "row": 1, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 2, "page": 0, "col": 0, "row": 4, "rot": 90 }
+    ] },
+    { "round": 16, "name": "大主教", "cls": "cleric", "hpScale": 1.322, "atkScale": 3.000, "items": [
+      { "defId": "wpn_war_hammer", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "arm_guardian_plate", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "trk_swift_boots", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "arm_blessed_armor", "stars": 1, "page": 0, "col": 4, "row": 1, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "wpn_mace", "stars": 2, "page": 0, "col": 0, "row": 2, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 0, "col": 1, "row": 3, "rot": 90 },
+      { "defId": "wpn_mace", "stars": 1, "page": 0, "col": 0, "row": 4, "rot": 90 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 2, "row": 4, "rot": 90 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 4, "row": 4, "rot": 90 },
+      { "defId": "arm_guardian_plate", "stars": 1, "page": 1, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "trk_swift_boots", "stars": 1, "page": 1, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 1, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "wpn_scimitar", "stars": 1, "page": 1, "col": 5, "row": 0, "rot": 0 }
+    ] },
+    { "round": 17, "name": "末日战将", "cls": "warrior", "hpScale": 2.240, "atkScale": 1.986, "items": [
+      { "defId": "wpn_rusty_sword", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_great_axe", "stars": 1, "page": 0, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "trk_phoenix_feather", "stars": 1, "page": 0, "col": 2, "row": 1, "rot": 0 },
+      { "defId": "arm_spiked_shield", "stars": 1, "page": 0, "col": 0, "row": 2, "rot": 0 },
+      { "defId": "wpn_flame_blade", "stars": 2, "page": 0, "col": 3, "row": 1, "rot": 0 },
+      { "defId": "wpn_steel_sword", "stars": 1, "page": 0, "col": 2, "row": 2, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 4, "row": 3, "rot": 0 },
+      { "defId": "food_water_flask", "stars": 2, "page": 0, "col": 5, "row": 3, "rot": 0 },
+      { "defId": "wpn_steel_sword", "stars": 2, "page": 1, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_steel_sword", "stars": 1, "page": 1, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "wpn_great_axe", "stars": 1, "page": 1, "col": 2, "row": 0, "rot": 0 }
+    ] },
+    { "round": 18, "name": "终焉大法师", "cls": "mage", "hpScale": 2.987, "atkScale": 3.000, "items": [
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 1, "row": 0, "rot": 0 },
+      { "defId": "food_cheese", "stars": 1, "page": 0, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "wpn_storm_staff", "stars": 1, "page": 0, "col": 3, "row": 0, "rot": 0 },
+      { "defId": "wpn_arcane_orb", "stars": 1, "page": 0, "col": 1, "row": 2, "rot": 0 },
+      { "defId": "trk_ruby", "stars": 1, "page": 0, "col": 5, "row": 0, "rot": 0 },
+      { "defId": "wpn_storm_staff", "stars": 1, "page": 0, "col": 3, "row": 3, "rot": 90 },
+      { "defId": "wpn_wooden_club", "stars": 1, "page": 0, "col": 5, "row": 1, "rot": 0 },
+      { "defId": "trk_swift_boots", "stars": 2, "page": 0, "col": 2, "row": 1, "rot": 0 },
+      { "defId": "wpn_spark_staff", "stars": 1, "page": 0, "col": 0, "row": 4, "rot": 90 },
+      { "defId": "wpn_arcane_orb", "stars": 1, "page": 1, "col": 0, "row": 0, "rot": 0 },
+      { "defId": "wpn_storm_staff", "stars": 1, "page": 1, "col": 2, "row": 0, "rot": 0 },
+      { "defId": "trk_archmage_crown", "stars": 1, "page": 1, "col": 4, "row": 0, "rot": 0 },
+      { "defId": "arm_guardian_plate", "stars": 1, "page": 2, "col": 0, "row": 0, "rot": 0 }
+    ] }
+  ]
+}

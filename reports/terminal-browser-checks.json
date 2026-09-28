@@ -1,0 +1,29 @@
+{
+  "checks": [
+    "BOOT completes in 2200ms ±100ms",
+    "any-key boot skip is immediate and does not enter game",
+    "boot click only skips animation",
+    "empty continue explains unavailability without creating a save",
+    "1920x1080 no scrolling or clipped navigation",
+    "1280x720 no scrolling or clipped navigation",
+    "small window notice recovers automatically after resize",
+    "keyboard navigation clamps, confirms and returns with visible focus",
+    "settings persist; reduced effects remove particles and disable BOOT",
+    "system reduced-motion overrides animation preference",
+    "read-only codex works without creating or changing a run",
+    "guide and detailed asset attribution are available",
+    "new-run overwrite confirmation preserves the save when cancelled",
+    "continue enters the existing run and return reloads its current metadata",
+    "confirmed new game opens the unchanged character selection",
+    "corrupt save is backed up and safely disables continue",
+    "all emoji requests failing falls back to text without broken images",
+    "five portrait clicks reveal the easter egg",
+    "browser exit gives a manual-close fallback",
+    "no browser runtime exceptions"
+  ],
+  "timings": {
+    "bootMs": 2208,
+    "skipMs": 15
+  },
+  "errors": []
+}

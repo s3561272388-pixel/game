@@ -2,6 +2,8 @@
 
 基于你提供的《背包大乱斗》策划案制作的可玩单人游戏。用有限的格子摆放装备，构筑相邻协同，挑战 18 回合自动战斗。
 
+[下载 Windows 安装包与离线网页版](https://github.com/s3561272388-pixel/Wuthering-Waves-Backpack-Brawl/releases/tag/wuwa-backpack-v1.2.0)
+
 ## v1.2.0 · 共鸣终端
 
 新增独立启动界面：长离立绘、频谱环、六项菜单、存档摘要、只读图鉴、玩法说明、设置与素材署名。按任意键可跳过开场；方向键选择菜单，Enter 确认，Esc 关闭弹窗。新建试炼前会确认是否覆盖旧记录，损坏存档会保留备份。可在设置中减少动态效果，也会尊重系统的减少动态效果设置。
@@ -12,7 +14,7 @@ Windows 64 位用户运行 `Resonance-Backpack-Setup-1.2.0-x64.exe`，按提示�
 
 ## 直接游玩
 
-双击本目录下的 **开始游戏.html**，使用 Chrome 或 Edge 打开即可。无需安装、无需启动服务器，图片和程序均已包含在本地。
+下载 Release 中的离线网页版，完整解压后双击 **开始游戏.html**，使用 Chrome 或 Edge 打开即可。无需安装、无需启动服务器，图片和程序均已包含在本地。源码仓库不包含生成后的 HTML，下载源码后请先按照下文构建。
 
 如果拿到的是压缩包，请**完整解压**，保持 `开始游戏.html` 与 `assets` 文件夹在同一目录，不要只拖出一个 HTML 文件。
 
@@ -71,7 +73,7 @@ node tools/diff-test.mjs --evals reports/evals --report reports/game-diff.md
 
 新增启动页验证可运行 `node tests/terminal-browser.cjs`；Windows 桌面验证运行 `node tests/desktop.cjs --packaged`（先构建安装包）。两者需要 Playwright，前者还需要 Chrome。桌面检查使用独立测试存档。
 
-`.github/workflows/release.yml` 提供 Windows 自动构建与 Release 发布流程，目标为用户指定的 `s3561272388-pixel/game`。将项目文件放在该仓库根目录并授权 Actions 后，可手动运行此流程；推送相关文件到默认分支也会触发。流程不会覆盖同版本的既有 Release。该文件目前仅随源码交付，本地验收不代表已在 GitHub 执行成功。
+`.github/workflows/release.yml` 提供 Windows 自动构建与 Release 发布流程，目标为用户指定的 `s3561272388-pixel/Wuthering-Waves-Backpack-Brawl`。可在该仓库 Actions 页面手动运行；推送相关文件到默认分支也会触发。流程不会覆盖同版本的既有 Release，运行状态与下载文件以仓库的 Actions 和 Releases 页面为准。
 
 战报 CLI：
 

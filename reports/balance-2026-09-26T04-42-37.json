@@ -1,0 +1,751 @@
+{
+  "runs": 500,
+  "baseSeed": 20260101,
+  "metrics": [
+    {
+      "id": 1,
+      "name": "开局可操作性",
+      "value": 1,
+      "threshold": "≥ 0.95",
+      "pass": true,
+      "note": "存在至少 1 件买得起的商品的回合占比"
+    },
+    {
+      "id": 2,
+      "name": "单局时长（回合数）",
+      "value": 14.102,
+      "threshold": "12–18 回合，贪心 AI 通关率 35–65%",
+      "pass": false,
+      "note": "贪心 AI 平均存活 14.1 回合；通关率 29.8%"
+    },
+    {
+      "id": 3,
+      "name": "左右对称性",
+      "value": 0,
+      "threshold": "换边违规 = 0；先手优势 ≤75%；不同阵容僵局率 ≤10%",
+      "pass": true,
+      "note": "固定先手方后交换左右阵容比对 500 组，违规 0 组；不同阵容时先手方胜率 49.7%；僵局率 0.2%"
+    },
+    {
+      "id": 4,
+      "name": "经济健康",
+      "value": 0.01849856334273746,
+      "threshold": "未花费 ≤ 总收入 25%；连续买不起 ≤ 2 回合",
+      "pass": true,
+      "note": "平均未花费占总收入 1.8%（最坏 10.6%）；平均扩容 1.61 次；最长\"一件都买不起\"连续 0 回合"
+    },
+    {
+      "id": 5,
+      "name": "无秒杀 / 无爆炸",
+      "value": 0.5407801418439717,
+      "threshold": "单次伤害 < maxHp；单件伤害占比 p95 ≤ 0.8 且最坏 ≤ 0.95；超时率 ≤1%",
+      "pass": true,
+      "note": "最坏单次伤害 293 vs 对方 maxHp 1164（不可满血秒杀：成立）；单件占比 p95 54.1%、最坏 65.2%；超时率 0.24%（已由突然死亡规则压制）"
+    },
+    {
+      "id": 6,
+      "name": "构筑多样性",
+      "value": 0.125,
+      "threshold": "死件率 ≤20%；最高出现率 ≤95%（仅告警）",
+      "pass": true,
+      "note": "死件 4/32（12.5%）；最高出现率 钉头锤 99.2% ⚠️ 存在近乎必买物品；前 10 物品占终局槽位 56.8%（参考值）"
+    },
+    {
+      "id": 7,
+      "name": "确定性",
+      "value": null,
+      "threshold": "100 次同种子结果一致",
+      "pass": null,
+      "note": "由 tools/qa-check.mjs 验证"
+    },
+    {
+      "id": 8,
+      "name": "交互完整性",
+      "value": null,
+      "threshold": "5 类操作 0 异常",
+      "pass": null,
+      "note": "需真实前端，由 qa-check 的静态扫描 + 人工清单覆盖"
+    },
+    {
+      "id": 9,
+      "name": "引擎性能",
+      "value": 0.252722,
+      "threshold": "≤ 16 ms / 场",
+      "pass": true,
+      "note": "参考实现单场结算 0.253 ms（游戏实现应同量级）"
+    }
+  ],
+  "winCurve": [
+    {
+      "round": 1,
+      "winRate": 0.87,
+      "samples": 500,
+      "avgSeconds": 8.5904,
+      "band": {
+        "from": 1,
+        "to": 3,
+        "min": 0.7,
+        "max": 0.98,
+        "label": "送分局"
+      },
+      "inBand": true
+    },
+    {
+      "round": 2,
+      "winRate": 0.948,
+      "samples": 500,
+      "avgSeconds": 7.991,
+      "band": {
+        "from": 1,
+        "to": 3,
+        "min": 0.7,
+        "max": 0.98,
+        "label": "送分局"
+      },
+      "inBand": true
+    },
+    {
+      "round": 3,
+      "winRate": 0.978,
+      "samples": 500,
+      "avgSeconds": 8.2414,
+      "band": {
+        "from": 1,
+        "to": 3,
+        "min": 0.7,
+        "max": 0.98,
+        "label": "送分局"
+      },
+      "inBand": true
+    },
+    {
+      "round": 4,
+      "winRate": 0.726,
+      "samples": 500,
+      "avgSeconds": 10.7474,
+      "band": {
+        "from": 4,
+        "to": 8,
+        "min": 0.55,
+        "max": 0.85,
+        "label": "成长期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 5,
+      "winRate": 0.286,
+      "samples": 500,
+      "avgSeconds": 9.592400000000001,
+      "band": {
+        "from": 4,
+        "to": 8,
+        "min": 0.55,
+        "max": 0.85,
+        "label": "成长期"
+      },
+      "inBand": false
+    },
+    {
+      "round": 6,
+      "winRate": 0.708,
+      "samples": 500,
+      "avgSeconds": 9.6744,
+      "band": {
+        "from": 4,
+        "to": 8,
+        "min": 0.55,
+        "max": 0.85,
+        "label": "成长期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 7,
+      "winRate": 0.716024340770791,
+      "samples": 493,
+      "avgSeconds": 8.693711967545639,
+      "band": {
+        "from": 4,
+        "to": 8,
+        "min": 0.55,
+        "max": 0.85,
+        "label": "成长期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 8,
+      "winRate": 0.8298755186721992,
+      "samples": 482,
+      "avgSeconds": 8.300622406639006,
+      "band": {
+        "from": 4,
+        "to": 8,
+        "min": 0.55,
+        "max": 0.85,
+        "label": "成长期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 9,
+      "winRate": 0.3672566371681416,
+      "samples": 452,
+      "avgSeconds": 9.752212389380531,
+      "band": {
+        "from": 9,
+        "to": 13,
+        "min": 0.45,
+        "max": 0.75,
+        "label": "压力期"
+      },
+      "inBand": false
+    },
+    {
+      "round": 10,
+      "winRate": 0.5296912114014252,
+      "samples": 421,
+      "avgSeconds": 8.144893111638956,
+      "band": {
+        "from": 9,
+        "to": 13,
+        "min": 0.45,
+        "max": 0.75,
+        "label": "压力期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 11,
+      "winRate": 0.6422764227642277,
+      "samples": 369,
+      "avgSeconds": 11.372628726287264,
+      "band": {
+        "from": 9,
+        "to": 13,
+        "min": 0.45,
+        "max": 0.75,
+        "label": "压力期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 12,
+      "winRate": 0.937125748502994,
+      "samples": 334,
+      "avgSeconds": 16.99850299401198,
+      "band": {
+        "from": 9,
+        "to": 13,
+        "min": 0.45,
+        "max": 0.75,
+        "label": "压力期"
+      },
+      "inBand": false
+    },
+    {
+      "round": 13,
+      "winRate": 0.4143302180685358,
+      "samples": 321,
+      "avgSeconds": 9.01152647975078,
+      "band": {
+        "from": 9,
+        "to": 13,
+        "min": 0.45,
+        "max": 0.75,
+        "label": "压力期"
+      },
+      "inBand": false
+    },
+    {
+      "round": 14,
+      "winRate": 0.9816176470588235,
+      "samples": 272,
+      "avgSeconds": 12.80110294117647,
+      "band": {
+        "from": 14,
+        "to": 18,
+        "min": 0.3,
+        "max": 0.65,
+        "label": "决胜期"
+      },
+      "inBand": false
+    },
+    {
+      "round": 15,
+      "winRate": 0.46096654275092935,
+      "samples": 269,
+      "avgSeconds": 12.573605947955391,
+      "band": {
+        "from": 14,
+        "to": 18,
+        "min": 0.3,
+        "max": 0.65,
+        "label": "决胜期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 16,
+      "winRate": 0.9912663755458515,
+      "samples": 229,
+      "avgSeconds": 14.031004366812226,
+      "band": {
+        "from": 14,
+        "to": 18,
+        "min": 0.3,
+        "max": 0.65,
+        "label": "决胜期"
+      },
+      "inBand": false
+    },
+    {
+      "round": 17,
+      "winRate": 0.6228070175438597,
+      "samples": 228,
+      "avgSeconds": 8.807894736842107,
+      "band": {
+        "from": 14,
+        "to": 18,
+        "min": 0.3,
+        "max": 0.65,
+        "label": "决胜期"
+      },
+      "inBand": true
+    },
+    {
+      "round": 18,
+      "winRate": 0.580110497237569,
+      "samples": 181,
+      "avgSeconds": 7.388950276243094,
+      "band": {
+        "from": 14,
+        "to": 18,
+        "min": 0.3,
+        "max": 0.65,
+        "label": "决胜期"
+      },
+      "inBand": true
+    }
+  ],
+  "itemUsage": [
+    {
+      "id": "wpn_world_tree_bow",
+      "name": "世界树之弓",
+      "cls": "ranger",
+      "rarity": "legendary",
+      "appears": 0,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0
+    },
+    {
+      "id": "wpn_doom_hammer",
+      "name": "末日之锤",
+      "cls": "warrior",
+      "rarity": "legendary",
+      "appears": 3,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.024
+    },
+    {
+      "id": "trk_archmage_crown",
+      "name": "大法师之冠",
+      "cls": "mage",
+      "rarity": "legendary",
+      "appears": 4,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.032
+    },
+    {
+      "id": "trk_holy_grail",
+      "name": "圣杯",
+      "cls": "cleric",
+      "rarity": "legendary",
+      "appears": 4,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.032
+    },
+    {
+      "id": "wpn_flame_blade",
+      "name": "烈焰剑",
+      "cls": "warrior",
+      "rarity": "epic",
+      "appears": 45,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.36
+    },
+    {
+      "id": "arm_thorn_mail",
+      "name": "荆棘铠",
+      "cls": "warrior",
+      "rarity": "rare",
+      "appears": 51,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.408
+    },
+    {
+      "id": "wpn_assassin_blade",
+      "name": "刺客短刃",
+      "cls": "ranger",
+      "rarity": "epic",
+      "appears": 57,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.456
+    },
+    {
+      "id": "trk_phoenix_feather",
+      "name": "凤凰之羽",
+      "cls": "neutral",
+      "rarity": "epic",
+      "appears": 253,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.506
+    },
+    {
+      "id": "trk_healing_herb",
+      "name": "治疗草药",
+      "cls": "cleric",
+      "rarity": "rare",
+      "appears": 78,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.624
+    },
+    {
+      "id": "wpn_long_bow",
+      "name": "长弓",
+      "cls": "ranger",
+      "rarity": "rare",
+      "appears": 92,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.736
+    },
+    {
+      "id": "wpn_storm_staff",
+      "name": "风暴法杖",
+      "cls": "mage",
+      "rarity": "epic",
+      "appears": 93,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.744
+    },
+    {
+      "id": "wpn_scimitar",
+      "name": "弯刀",
+      "cls": "neutral",
+      "rarity": "rare",
+      "appears": 387,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.774
+    },
+    {
+      "id": "wpn_poison_dagger",
+      "name": "毒匕",
+      "cls": "ranger",
+      "rarity": "rare",
+      "appears": 99,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.792
+    },
+    {
+      "id": "trk_swift_boots",
+      "name": "疾行靴",
+      "cls": "neutral",
+      "rarity": "uncommon",
+      "appears": 399,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.798
+    },
+    {
+      "id": "arm_guardian_plate",
+      "name": "守护铠甲",
+      "cls": "neutral",
+      "rarity": "epic",
+      "appears": 400,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.8
+    },
+    {
+      "id": "food_water_flask",
+      "name": "水囊",
+      "cls": "neutral",
+      "rarity": "common",
+      "appears": 423,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.846
+    },
+    {
+      "id": "food_cheese",
+      "name": "奶酪",
+      "cls": "neutral",
+      "rarity": "uncommon",
+      "appears": 424,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.848
+    },
+    {
+      "id": "arm_spiked_shield",
+      "name": "尖刺盾",
+      "cls": "warrior",
+      "rarity": "uncommon",
+      "appears": 108,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.864
+    },
+    {
+      "id": "arm_chain_mail",
+      "name": "锁子甲",
+      "cls": "neutral",
+      "rarity": "uncommon",
+      "appears": 437,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.874
+    },
+    {
+      "id": "trk_ruby",
+      "name": "红宝石",
+      "cls": "mage",
+      "rarity": "uncommon",
+      "appears": 110,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.88
+    },
+    {
+      "id": "wpn_ice_lance",
+      "name": "寒冰枪",
+      "cls": "mage",
+      "rarity": "uncommon",
+      "appears": 113,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.904
+    },
+    {
+      "id": "wpn_great_axe",
+      "name": "巨斧",
+      "cls": "warrior",
+      "rarity": "rare",
+      "appears": 115,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.92
+    },
+    {
+      "id": "food_bread",
+      "name": "面包",
+      "cls": "neutral",
+      "rarity": "common",
+      "appears": 462,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.924
+    },
+    {
+      "id": "arm_leather_vest",
+      "name": "皮甲",
+      "cls": "neutral",
+      "rarity": "common",
+      "appears": 471,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.942
+    },
+    {
+      "id": "wpn_arcane_orb",
+      "name": "秘法宝珠",
+      "cls": "mage",
+      "rarity": "rare",
+      "appears": 119,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.952
+    },
+    {
+      "id": "wpn_steel_sword",
+      "name": "精钢长剑",
+      "cls": "warrior",
+      "rarity": "uncommon",
+      "appears": 120,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.96
+    },
+    {
+      "id": "wpn_short_bow",
+      "name": "短弓",
+      "cls": "ranger",
+      "rarity": "uncommon",
+      "appears": 121,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.968
+    },
+    {
+      "id": "arm_blessed_armor",
+      "name": "祝福铠甲",
+      "cls": "cleric",
+      "rarity": "rare",
+      "appears": 121,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.968
+    },
+    {
+      "id": "trk_lucky_charm",
+      "name": "幸运符",
+      "cls": "neutral",
+      "rarity": "common",
+      "appears": 486,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.972
+    },
+    {
+      "id": "wpn_wooden_club",
+      "name": "木棒",
+      "cls": "neutral",
+      "rarity": "common",
+      "appears": 487,
+      "eligible": 500,
+      "isStartingItem": false,
+      "rate": 0.974
+    },
+    {
+      "id": "wpn_twin_daggers",
+      "name": "双刃",
+      "cls": "ranger",
+      "rarity": "uncommon",
+      "appears": 122,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.976
+    },
+    {
+      "id": "wpn_mace",
+      "name": "钉头锤",
+      "cls": "cleric",
+      "rarity": "uncommon",
+      "appears": 124,
+      "eligible": 125,
+      "isStartingItem": false,
+      "rate": 0.992
+    },
+    {
+      "id": "wpn_rusty_sword",
+      "name": "锈蚀短剑",
+      "cls": "warrior",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "arm_wood_shield",
+      "name": "木盾",
+      "cls": "warrior",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "wpn_dagger",
+      "name": "匕首",
+      "cls": "ranger",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "wpn_hunting_bow",
+      "name": "猎弓",
+      "cls": "ranger",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "wpn_spark_staff",
+      "name": "火花法杖",
+      "cls": "mage",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "trk_mana_gem",
+      "name": "法力宝石",
+      "cls": "mage",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "wpn_war_hammer",
+      "name": "战锤",
+      "cls": "cleric",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    },
+    {
+      "id": "trk_holy_symbol",
+      "name": "圣徽",
+      "cls": "cleric",
+      "rarity": "common",
+      "appears": 125,
+      "eligible": 125,
+      "isStartingItem": true,
+      "rate": 1
+    }
+  ],
+  "deadItems": [
+    "wpn_world_tree_bow",
+    "wpn_doom_hammer",
+    "trk_archmage_crown",
+    "trk_holy_grail"
+  ],
+  "fairness": {
+    "violations": 0,
+    "compared": 500,
+    "firstStrikeWinRate": 0.4969939879759519,
+    "mixedDrawRate": 0.002
+  },
+  "clearRate": 0.298,
+  "avgRounds": 14.102,
+  "unspentRatio": 0.01849856334273746,
+  "worstUnspentRatio": 0.10606060606060606,
+  "settleMs": 0.252722
+}

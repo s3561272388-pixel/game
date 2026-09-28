@@ -1,0 +1,56 @@
+{
+  "checks": [
+    "unclaimed reward survives reload with unchanged options",
+    "all three reward choices reachable at 390px without horizontal overflow",
+    "warrior completed all 18 rounds and defeated final enemy through UI",
+    "ranger completed all 18 rounds and defeated final enemy through UI",
+    "mage completed all 18 rounds and defeated final enemy through UI",
+    "cleric completed all 18 rounds and defeated final enemy through UI",
+    "weapons equip freely from stash; gold and blessings match actual battle state",
+    "all 5 reward milestones processed in each of 4 complete runs",
+    "no browser runtime exceptions"
+  ],
+  "campaigns": [
+    {
+      "cls": "warrior",
+      "seed": 17043,
+      "rounds": 18,
+      "actions": 67,
+      "rewards": 5,
+      "hearts": 1,
+      "wins": 14,
+      "finalWinner": "A"
+    },
+    {
+      "cls": "ranger",
+      "seed": 17043,
+      "rounds": 18,
+      "actions": 86,
+      "rewards": 5,
+      "hearts": 5,
+      "wins": 18,
+      "finalWinner": "A"
+    },
+    {
+      "cls": "mage",
+      "seed": 9124,
+      "rounds": 18,
+      "actions": 89,
+      "rewards": 5,
+      "hearts": 5,
+      "wins": 18,
+      "finalWinner": "A"
+    },
+    {
+      "cls": "cleric",
+      "seed": 9124,
+      "rounds": 18,
+      "actions": 88,
+      "rewards": 5,
+      "hearts": 5,
+      "wins": 18,
+      "finalWinner": "A"
+    }
+  ],
+  "errors": []
+}

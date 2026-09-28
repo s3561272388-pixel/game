@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-09-26T04:37:34.405Z",
+  "gate": false,
+  "checks": [
+    {
+      "id": "A1",
+      "name": "数据完整性",
+      "status": "PASS",
+      "observed": "0 错误 / 0 警告",
+      "threshold": "0 错误",
+      "note": "物品/职业/关卡全部通过字段、引用、数值区间与布局合法性校验"
+    },
+    {
+      "id": "B1",
+      "name": "确定性（不可用 Math.random / Date.now）",
+      "status": "PASS",
+      "observed": "100 次同种子 → 1 种结果",
+      "threshold": "必须恰好 1 种",
+      "note": "同种子 + 同阵容 → 事件流完全一致"
+    },
+    {
+      "id": "B2",
+      "name": "随机流按 seed/round/阵容指纹 正确派生",
+      "status": "PASS",
+      "observed": "PRNG 区分种子:是 / deriveSeed 区分 seed 与 round:是 / 带暴击的对局区分种子:是",
+      "threshold": "三者均须为「是」",
+      "note": "若全为「否」，说明种子没接进随机流，回放与暴击判定会失效"
+    },
+    {
+      "id": "C1",
+      "name": "结算性能",
+      "status": "PASS",
+      "observed": "0.383 ms / 场",
+      "threshold": "≤ 16 ms",
+      "note": "以参考裁判为基准；游戏实现同量级即可"
+    },
+    {
+      "id": "D0",
+      "name": "平衡报告",
+      "status": "FAIL",
+      "observed": "未找到 reports/balance-*.json",
+      "threshold": "需先跑 run-balance",
+      "note": "执行: node tools/run-balance.mjs --runs 500"
+    },
+    {
+      "id": "E1",
+      "name": "源码静态扫描（引擎纯净性）",
+      "status": "PASS",
+      "observed": "扫描 3 个文件，命中 0 处",
+      "threshold": "0 处",
+      "note": "仅检查 packages/engine 是否引入非确定性或表现层依赖"
+    }
+  ],
+  "bugs": [
+    {
+      "severity": "S2",
+      "title": "缺少平衡报告，指标 1–6 无法判定",
+      "repro": "node tools/run-balance.mjs --runs 500 && node tools/qa-check.mjs",
+      "expected": "存在最新平衡报告",
+      "actual": "reports/ 下没有 balance-*.json",
+      "hint": "先跑平衡模拟器",
+      "source": "tools/qa-check.mjs#D"
+    }
+  ],
+  "manualChecklist": [
+    [
+      "拖拽放置",
+      "拖起物品移动时跟手无延迟；合法位置显示高亮预览；非法位置红色高亮且禁止落地，回弹动画 ≤200ms"
+    ],
+    [
+      "旋转",
+      "右键 / R 键可将手中物品旋转 90°，旋转后占位预览同步变化，不出现越界或重叠"
+    ],
+    [
+      "合并升星",
+      "3 件同名同星物品自动合成 1 件 +1 星；合并后原位保留（不跳到其他格子）；播放金光与音效；数值按 starMult 提升"
+    ],
+    [
+      "出售与撤销",
+      "拖到商店区或右键菜单可出售，返还 = max(1, floor(cost*0.6))；Ctrl+Z 能连续回退最近 20 步摆放/买卖"
+    ],
+    [
+      "背包已满时的购买",
+      "背包放不下时必须禁止购买并给出可见原因，绝不能出现\"买完放不下导致卡死\""
+    ],
+    [
+      "战斗跳过与倍速",
+      "空格进入战斗；1/2/4 倍速与\"跳过\"按钮均可用；跳过能直接出结果且不卡死、不丢结算"
+    ],
+    [
+      "Tooltip 数值一致性",
+      "随机抽查 10 件物品的详情浮窗，其显示数值必须与实战生效数值完全一致（含星级、协同加成）"
+    ],
+    [
+      "色盲模式",
+      "开启后\"合法/非法格\"与稀有度颜色仍可区分"
+    ],
+    [
+      "存档",
+      "刷新页面后能继续当前局，金币/命值/背包/商店状态完整恢复"
+    ]
+  ]
+}

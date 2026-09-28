@@ -1,0 +1,46 @@
+{
+  "appId": "games.resonance.backpack",
+  "productName": "共鸣行囊",
+  "copyright": "非官方个人学习作品 · 原作美术归库洛游戏及相应作者",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "desktop/**/*",
+    "package.json",
+    "ATTRIBUTIONS.md",
+    "licenses/**/*"
+  ],
+  "asar": true,
+  "npmRebuild": false,
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "icon": "desktop/icon.ico",
+    "signExecutable": false
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "共鸣行囊",
+    "deleteAppDataOnUninstall": false,
+    "runAfterFinish": true,
+    "installerLanguages": [
+      "zh_CN",
+      "en_US"
+    ],
+    "language": "2052"
+  },
+  "artifactName": "Resonance-Backpack-Setup-${version}-${arch}.${ext}",
+  "publish": null
+}

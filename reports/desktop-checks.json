@@ -1,0 +1,13 @@
+{
+  "packaged": true,
+  "checks": [
+    "packaged local assets load under isolated custom protocol with no Node access",
+    "context isolation, sandbox and web security are enabled",
+    "F11 toggles fullscreen for small desktop work areas",
+    "desktop new run, return and continue preserve the game state",
+    "desktop reload preserves the local save",
+    "desktop exit closes its native window",
+    "no renderer runtime exceptions"
+  ],
+  "errors": []
+}

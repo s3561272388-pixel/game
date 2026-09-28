@@ -1,0 +1,52 @@
+{
+  "excited": {
+    "path": "assets/emoji/excited.webp",
+    "name": "长离",
+    "source": "https://emoji.wuwa.games/archives/changli-pack1-png",
+    "url": "https://media.wuwa.games/emoji-packs--changli-pack1-png--webp--r-70ac737d372888fa2ebf--008af47cf4e9fdcae23dc9eb8148218d0463ee392a61ef2274862de877fac266.webp",
+    "author": "九个西瓜",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page",
+    "use": "启动页反馈气泡，非立绘"
+  },
+  "curious": {
+    "path": "assets/emoji/curious.webp",
+    "name": "长离",
+    "source": "https://emoji.wuwa.games/archives/changli-pack1-png",
+    "url": "https://media.wuwa.games/emoji-packs--changli-pack1-png--webp--r-9875c51f4448de22f6c3--022df535e72168bd41d4ab51138f65c7e4a6ddfb595c42d64f1dc6262301814d.webp",
+    "author": "九个西瓜",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page",
+    "use": "启动页反馈气泡，非立绘"
+  },
+  "farewell": {
+    "path": "assets/emoji/farewell.webp",
+    "name": "维里奈",
+    "source": "https://emoji.wuwa.games/archives/weilina-banya-phase-4",
+    "url": "https://media.wuwa.games/emoji-packs--weilina-banya-phase-4--webp--r-9388a1b3c9b852b40abb--5ef4cc1ee675d487544073bd447dad36b1369b0103c1375cde9fd067fa58822c.webp",
+    "author": "猫屋敷梨梨&春也Haruya",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page",
+    "use": "启动页反馈气泡，非立绘"
+  },
+  "idle": {
+    "path": "assets/emoji/idle.webp",
+    "name": "安可",
+    "source": "https://emoji.wuwa.games/archives/anke-wuxue-phase-1",
+    "url": "https://media.wuwa.games/emoji-packs--anke-wuxue-phase-1--webp--r-a0ac50c2d62f33daf1f8--95bec60cc1c470ede36c13d6620457e78b9947c74223a43971751f080ed3f2fd.webp",
+    "author": "雾雪",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page",
+    "use": "启动页反馈气泡，非立绘"
+  },
+  "boot": {
+    "path": "assets/emoji/boot.webp",
+    "name": "炽霞",
+    "source": "https://emoji.wuwa.games/archives/chixia-loading-error",
+    "url": "https://media.wuwa.games/emoji-packs--chixia-loading-error--webp--r-1ee6a8855543764311fb--2cec6a5623c6757bd4478aa3df5b5277f42125450cfa7054c54bbee47473b301.webp",
+    "author": "雾雪",
+    "license": "来源页标示 CC BY-NC-SA 4.0；原角色版权归库洛，画师署名随附。仅用于非商业原型。",
+    "retrieval": "Downloaded from normally rendered public image on source page",
+    "use": "启动页反馈气泡，非立绘"
+  }
+}

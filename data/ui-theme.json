@@ -1,0 +1,320 @@
+{
+  "$schema": "ui-theme-v1",
+  "version": "1.0.0",
+  "meta": {
+    "note": "全局 UI 设计 token（唯一来源）。启动界面与游戏内界面必须共用本文件，改动只改这里，禁止在组件里写死色值/字号/时长。",
+    "styleName": "共鸣终端 / RESONANCE TERMINAL",
+    "styleRef": "鸣潮（Wuthering Waves）HUD 语汇：深墨底 + 青蓝主色 + 金铜强调 + 切角几何 + 等宽数字",
+    "baseResolution": [
+      1920,
+      1080
+    ],
+    "minResolution": [
+      1280,
+      720
+    ]
+  },
+  "color": {
+    "bgVoid": "#080B10",
+    "bgBase": "#0D1117",
+    "bgRaised": "#12171F",
+    "bgOverlay": "rgba(8,11,16,0.72)",
+    "panel": "#12171F",
+    "panelHi": "#1A212B",
+    "panelActive": "#1F2833",
+    "line": "rgba(127,231,240,0.14)",
+    "lineStrong": "rgba(127,231,240,0.34)",
+    "lineGold": "rgba(227,192,138,0.42)",
+    "cyan": "#6FE3F2",
+    "cyanDim": "#3E9AA8",
+    "cyanDeep": "#1B4A55",
+    "cyanGlow": "rgba(111,227,242,0.35)",
+    "gold": "#E3C08A",
+    "goldDeep": "#B98F52",
+    "goldGlow": "rgba(227,192,138,0.30)",
+    "text": "#E9EDF2",
+    "textSub": "#B6C0CB",
+    "textMute": "#8A96A3",
+    "textDim": "#5A6673",
+    "danger": "#FF6B6B",
+    "success": "#7BE0A8",
+    "warning": "#E8B96A",
+    "scrim": "linear-gradient(90deg, rgba(8,11,16,0.96) 0%, rgba(8,11,16,0.82) 38%, rgba(8,11,16,0.10) 62%, rgba(8,11,16,0.55) 100%)"
+  },
+  "rarity": {
+    "common": {
+      "name": "普通",
+      "color": "#8A96A3",
+      "bg": "rgba(138,150,163,0.10)"
+    },
+    "uncommon": {
+      "name": "精良",
+      "color": "#6FE3F2",
+      "bg": "rgba(111,227,242,0.10)"
+    },
+    "rare": {
+      "name": "稀贵",
+      "color": "#A78BFA",
+      "bg": "rgba(167,139,250,0.12)"
+    },
+    "epic": {
+      "name": "珍稀",
+      "color": "#F08BC0",
+      "bg": "rgba(240,139,192,0.12)"
+    },
+    "legendary": {
+      "name": "传世",
+      "color": "#E3C08A",
+      "bg": "rgba(227,192,138,0.14)"
+    }
+  },
+  "typography": {
+    "families": {
+      "title": "\"Source Han Sans SC\", \"Noto Sans SC\", sans-serif",
+      "body": "\"Source Han Sans SC\", \"Noto Sans SC\", sans-serif",
+      "mono": "\"JetBrains Mono\", \"Roboto Mono\", ui-monospace, monospace"
+    },
+    "licenseNote": "思源黑体/Noto Sans SC 为 OFL，JetBrains Mono 为 OFL —— 均可商用。详见 docs/01 §2。",
+    "scale": {
+      "display": {
+        "size": 68,
+        "weight": 900,
+        "letterSpacing": "0.16em",
+        "lineHeight": 1.05
+      },
+      "h1": {
+        "size": 40,
+        "weight": 700,
+        "letterSpacing": "0.06em"
+      },
+      "h2": {
+        "size": 22,
+        "weight": 600,
+        "letterSpacing": "0.04em"
+      },
+      "menu": {
+        "size": 20,
+        "weight": 500,
+        "letterSpacing": "0.14em"
+      },
+      "body": {
+        "size": 14,
+        "weight": 400,
+        "letterSpacing": "0.02em"
+      },
+      "caption": {
+        "size": 12,
+        "weight": 400,
+        "letterSpacing": "0.08em"
+      },
+      "overline": {
+        "size": 11,
+        "weight": 500,
+        "letterSpacing": "0.34em",
+        "uppercase": true
+      },
+      "numeric": {
+        "size": 30,
+        "weight": 700,
+        "family": "mono",
+        "letterSpacing": "0.02em"
+      }
+    }
+  },
+  "shape": {
+    "radius": 0,
+    "cutCorner": "10px",
+    "clip": {
+      "cutTRBL": "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))",
+      "cutTR": "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)",
+      "cutBL": "polygon(0 0, 100% 0, 100% 100%, 10px 100%, 0 calc(100% - 10px))",
+      "chevron": "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%)"
+    },
+    "borderWidth": 1,
+    "borderWidthStrong": 2,
+    "focusRing": "0 0 0 1px #6FE3F2, 0 0 16px rgba(111,227,242,0.45) inset"
+  },
+  "spacing": {
+    "unit": 8,
+    "scale": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96
+    ]
+  },
+  "motion": {
+    "note": "所有时长必须走这些 token；prefers-reduced-motion 时统一乘 0.2 并关闭视差/粒子/扫描线。",
+    "duration": {
+      "instant": 90,
+      "fast": 160,
+      "base": 260,
+      "slow": 420,
+      "boot": 2200,
+      "ambient": 4000
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.22, 0.61, 0.36, 1)",
+      "enter": "cubic-bezier(0.16, 0.84, 0.44, 1)",
+      "exit": "cubic-bezier(0.5, 0, 0.75, 0)",
+      "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    }
+  },
+  "startScreen": {
+    "topBarHeight": 56,
+    "footerHeight": 40,
+    "contentPaddingX": 96,
+    "menuWidth": 460,
+    "portraitWidthPct": 55,
+    "menuItems": [
+      {
+        "id": "start",
+        "label": "开始共鸣",
+        "en": "NEW RUN",
+        "hint": "进入 18 回合试炼",
+        "needsSave": false
+      },
+      {
+        "id": "resume",
+        "label": "继续试炼",
+        "en": "CONTINUE",
+        "hint": "读取本地存档",
+        "needsSave": true
+      },
+      {
+        "id": "codex",
+        "label": "物品图鉴",
+        "en": "ARCHIVE",
+        "hint": "已解锁物品一览",
+        "needsSave": false
+      },
+      {
+        "id": "guide",
+        "label": "玩法指南",
+        "en": "MANUAL",
+        "hint": "规则与协同说明",
+        "needsSave": false
+      },
+      {
+        "id": "settings",
+        "label": "设置",
+        "en": "CONFIG",
+        "hint": "音量 / 色盲 / 震动",
+        "needsSave": false
+      },
+      {
+        "id": "exit",
+        "label": "退出终端",
+        "en": "TERMINATE",
+        "hint": "关闭页面",
+        "needsSave": false
+      }
+    ],
+    "layers": [
+      {
+        "id": "L0",
+        "name": "底色与网格",
+        "parallaxPx": 8
+      },
+      {
+        "id": "L1",
+        "name": "频谱环",
+        "parallaxPx": -6
+      },
+      {
+        "id": "L2",
+        "name": "角色立绘",
+        "parallaxPx": 14
+      },
+      {
+        "id": "L3",
+        "name": "内容区",
+        "parallaxPx": 0
+      },
+      {
+        "id": "L4",
+        "name": "顶栏/底栏",
+        "parallaxPx": 0
+      },
+      {
+        "id": "L5",
+        "name": "扫描线/暗角/噪点",
+        "parallaxPx": 0
+      }
+    ]
+  },
+  "sound": {
+    "hover": {
+      "file": "sfx_ui_hover_01.ogg",
+      "durationMs": 60,
+      "note": "高频短促 click，音量 0.25"
+    },
+    "confirm": {
+      "file": "sfx_ui_confirm_01.ogg",
+      "durationMs": 320,
+      "note": "低频 whoosh + 金属尾音，音量 0.5"
+    },
+    "boot": {
+      "file": "sfx_ui_boot_01.ogg",
+      "durationMs": 1400,
+      "note": "终端启动扫频，音量 0.4"
+    },
+    "deny": {
+      "file": "sfx_ui_deny_01.ogg",
+      "durationMs": 180,
+      "note": "不可用项点击反馈，音量 0.3"
+    }
+  },
+  "terminal": {
+    "layout": {
+      "menuWidth": 460,
+      "menuWidthCompact": 380,
+      "pageInset": 96,
+      "pageInsetCompact": 56,
+      "menuRow": 48,
+      "menuRowCompact": 43,
+      "displayCompact": 52,
+      "menuCompact": 17,
+      "barHeight": 56,
+      "footerHeight": 40,
+      "heroTop": "5%",
+      "emojiSize": 64,
+      "heroSize": "92vh",
+      "ringSize": "66vw",
+      "hudWidth": 230,
+      "smallIcon": 16,
+      "mediumIcon": 20,
+      "largeIcon": 32,
+      "primaryHeight": 56
+    },
+    "timing": {
+      "bootGrid": 200,
+      "bootPortrait": 600,
+      "bootTitle": 800,
+      "bootMenu": 1200,
+      "bootFrame": 1800,
+      "menuStagger": 100,
+      "letterStagger": 60,
+      "idleBubble": 8000,
+      "bubbleHold": 2500,
+      "emojiCycle": 400,
+      "confirmFill": 180,
+      "confirmFlash": 60,
+      "exitFallback": 420,
+      "ringCycle": 60000,
+      "gridCycle": 120000,
+      "scanCycle": 6000,
+      "particleMin": 18000,
+      "particleStep": 520,
+      "parallaxLerp": 0.06
+    },
+    "particleCount": 24,
+    "easterClicks": 5
+  }
+}

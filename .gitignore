@@ -1,0 +1,10 @@
+node_modules/
+release/
+dist/
+开始游戏.html
+*.log
+.env
+.env.*
+.DS_Store
+reports/evals/
+reports/cli-eval.json
