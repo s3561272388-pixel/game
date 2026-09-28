@@ -1,8 +1,10 @@
 # 鸣潮 · 共鸣行囊
 
-基于你提供的《背包大乱斗》策划案制作的可玩单人游戏。用有限的格子摆放装备，构筑相邻协同，挑战 18 回合自动战斗。
+一款鸣潮主题的离线单人背包构筑游戏。用有限的格子摆放装备，构筑相邻协同，挑战 18 回合自动战斗。
 
-[下载 Windows 安装包与离线网页版](https://github.com/s3561272388-pixel/Wuthering-Waves-Backpack-Brawl/releases/tag/wuwa-backpack-v1.2.0)
+发行包：[Releases](https://github.com/s3561272388-pixel/Wuthering-Waves-Backpack-Brawl/releases)。源码构建说明见下文。
+
+![共鸣终端启动界面](reports/terminal-1280.png)
 
 ## v1.2.0 · 共鸣终端
 
